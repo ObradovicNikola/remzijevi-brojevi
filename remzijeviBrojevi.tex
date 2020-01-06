@@ -4,6 +4,7 @@
 \usepackage{titling}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{amsmath}
 \usepackage{tcolorbox}
 \usepackage{mdframed}
 \usepackage{graphicx}
@@ -26,7 +27,7 @@
 \\matematiku i informatiku}
 \vspace{5em} 
 \\ \textbf{Remzijevi brojevi}
-\\ - \large seminarski rad -
+\\ \large - seminarski rad -
 \vspace{1em} }
 
 
@@ -156,6 +157,25 @@
 	\\
 	\vspace{0.7em} tj. $R(m,n) \leq {m+n-2\choose m-1}$, što je i trebalo dokazati. 
 	
+	\newpage
+	
+	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 2.3}}
+	Za $m,n\geq 2$  važi sledeće:
+	
+	\[
+   	 R(m,n)\leq 
+		\begin{cases}
+    		R(m-1,n)+R(m,n-1)-1,& \text{ako su R(m-1,n) i R(m,n-1) parni}\\
+    	R(m-1,n)+R(m,n-1),      & \text{inače}
+	\end{cases}
+	\]
+	
+	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 2.3}}
+	Iz teoreme 1.obrad već znamo da važi
+	\[R(m,n)\leq R(m-1,n)+R(m,n-1),\]
+	a sada još treba dokazati da je
+	\[R(m,n)\neq R(m-1,n)+R(m,n-1)\] 
+	ako su $R(m-1,n)$ i $R(m,n-1)$ parni.
 	
 	\section{Granice remzijevih brojeva}
 	Pesic
