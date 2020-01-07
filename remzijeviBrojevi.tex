@@ -174,8 +174,16 @@
 	Iz teoreme 1.obrad već znamo da važi
 	\[R(m,n)\leq R(m-1,n)+R(m,n-1),\]
 	a sada još treba dokazati da je
-	\[R(m,n)\neq R(m-1,n)+R(m,n-1)\] 
+	\[R(m,n)\leq R(m-1,n)+R(m,n-1)-1\] 
 	ako su $R(m-1,n)$ i $R(m,n-1)$ parni.
+	\vspace{0.5em}
+	\\
+	\noindent Neka je $t=R(m-1,n)+R(m,n-1)-1$.
+	Znamo da je t neparan broj. Posmatrajmo graf G sa t čvorova čije su grane obojene u dve boje: crvenu i plavu. Neka je T podgraf grafa G koji se sastoji iz plavih grana i svih čvorova grafa G. Neka je $\delta(v_i)$ stepen i-tog čvora u grafu T. Iz Prve teoreme teorije grafova znamo da je zbir stepeni svih čvorova u grafu paran broj. Kako u grafu T ima neparan broj čvorova (broj čvorova je t, isto kao i u grafu G), sledi da bar jedan čvor mora imati paran stepen. Neka to, bez umanjenja opštosti, bude čvor $v_1$ i neka je njegov stepen $d_1$. To znači da je čvor $v_1$ incidentan sa parnim brojem plavih grana. Posmatrajmo sada ostale čvorove u grafu G. Neka je M skup čvorova koji su sa čvorom $v_1$ povezani plavom granom, a N skup čvorova koji su sa $v_1$ povezani crvenom granom. Kako već znamo da je $|M| = d_1$,  sledi da je $|N| = t-1-d_1$, pa su $|M|$ i $|N|$ parni brojevi. Po Uopštenom Dirihleovom principu mora da važi jedno od sledećeg:
+	\[|M|\geq R(m-1,n)-1 \quad \text{ili} \quad  |N|\geq R(m,n-1)\] 
+	Međutim, kako znamo da je $|M|$ paran broj a $R(m-1,n)-1$ neparan broj, nejednakost se može pojačati na $|M|\geq R(m-1,n)$. \\
+	Pretpostavimo da važi $|M|\geq R(m-1,n)$. To znači da podgraf grafa G indukovan čvorovima iz skupa $M$ sadrži crveni $\bf K_n$ graf (u tom slučaju je kraj dokaza) ili plavi $\bf K_{m-1}$ graf koji zajedno sa čvorom $v_1$ čini plavi $\bf K_{m}$ graf (kraj dokaza).\\
+	Slučaj za $|N|\geq R(m,n-1)$ se dokazuje analogno.
 	
 	\section{Granice remzijevih brojeva}
 	Pesic
