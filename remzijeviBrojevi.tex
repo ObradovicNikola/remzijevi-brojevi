@@ -71,6 +71,117 @@
 	
 	\section{Uvod u Remzijevu teoriju}
 	Obrad
+	\newline
+	\noindent Naziv je dat u čast britanskog matematičara, Frank Plumpton Ramsey-a, koji je objavio članak
+	1928. sa dokazom koji je danas poznat kao Remzijeva teorija. Opšte shvatanje ove teoreme često glasi:
+	''U svakom neredu postoji red.'', ali shvatanje koje je prikladnije ovom radu je ideja da svaka
+	struktura sadrži uređenu podstrukturu. Međutim, da bismo shvatili Remzijevu teoriju, moramo uvesti
+	određene matematičke pojmove.
+
+	\subsection{Dirihlet-ov princip}
+	\vspace{0.5em}
+	{\noindent\fontsize{12pt}{12pt}\textbf{Primer}}
+	\vspace{0.5em}
+
+	\noindent Ako se $n$ + 1 zečeva smesti u n kaveza, onda će se bar dva zeca naći u istom kavezu.
+	\vspace{1.5em}
+
+	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz}}
+	\vspace{0.5em}	
+
+	\noindent Pretpostavimo da svaka kutija sadrži najviše jedan predmet. Tada je ukupan broj predmeta
+	najviše n, što je u suprotnosti sa pretpostavkom da ima n + 1 predmeta. 
+	\vspace{1.5em}	
+
+	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 1.1}}
+	\vspace{0.5em}
+
+	\noindent Ako su A i B konačni skupovi i |A| > |B|, onda ne postoji injektivno preslikavanje skupa A u
+	skup B.
+	\vspace{1.5em}
+
+	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 1.1}}
+	\vspace{0.5em}	
+
+	\noindent Neka su A i B konačni skupovi i |A| > |B|. Kada bismo injektivno preslikali skup A
+	u skup X, tada bi skup X imao barem |A| elemenata. U tom slučaju skupovi B i X, nikada ne bi mogli
+	da budu isti, dakle injektivno preslikavanje skupa A u skup B ne postoji.
+
+	\vspace{0.5em}
+	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 1.2}}
+	\vspace{0.5em}
+
+	\noindent Neka je A konačan skup i neka je 0 < r < |A|.
+	Ako svaki element skupa A obojimo sa jednom od datih r boja, onda su najmanje dva
+	elementa obojena istom bojom.
+	\vspace{1.5em}
+
+	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 1.2}}
+	\vspace{0.5em}	
+
+	\noindent Pretpostavimo da je svaki element iz skupa A obojen različitom bojom. Tada bismo
+	imali |A| različitih boja što je u suprotnosti sa pretpostavkom da ima r < |A| boja.
+	
+	kockica
+
+	\noindent Remzijeva teorija se može primeniti i objasniti na više načina, ali uz pomoć boja 
+	je objašnjenje dosta intuitivno te će nam ovakav način razmišljanja olakšati razumevanje same Remzijeve teoreme.
+
+	\vspace{0.5em}
+	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 1.3}}
+	\vspace{0.5em}
+
+	\noindent Ako je A skup od $n$ elemenata i ako je dato $n \in \mathbb{N}\ {0}$, gde je $r$ < $n$, onda svaka particija
+	skupa A sa $r$ klasa ima najmanje jednu klasu sa bar dva elementa.
+	\vspace{1.5em}
+
+	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 1.3}}
+	\vspace{0.5em}
+
+	\noindent Isto kao u Teoremi 1.2, ali u ovom slucaju boje su predstavljene kao klase.
+	Klase mogu biti bilo šta, a ne samo boje.
+
+	\vspace{0.5em}
+	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 1.4}}
+	\vspace{0.5em}
+
+	% hir
+	\noindent Neka su dati $n, r \in \mathbb{N}$, kao i $l_{1},...,l_{r} \in \mathbb{N}$ gde je,
+	\vspace{0.5em}
+	
+	\indent $l_{1}+\dots+l_{r} \leq n+r-1$.
+	\vspace{0.5em}
+
+	% hir
+	\noindent Tada za svako bojenje $\varphi:\underline{n} \rightarrow \underline{r}$ postoji $i \in r$, takvo da važi $|\varphi^{-1}(i)| \geq l_{i}.$
+	\vspace{1.5em}
+
+	{\noindent\fontsize{12pt}{12pt}\textbf{Tumačenje}}
+	\vspace{0.5em}
+
+	\noindent Imamo $n \in \mathbb{N}$ elemenata i $r \in \mathbb{N}$ boja. Ako dodelimo svakoj boji $i$
+	neki broj $l_{i} \in \mathbb{N}$ i važi
+	\vspace{0.5em}
+
+	\indent $l_{1}+\dots+l_{r} \leq n+r-1$.
+	\vspace{0.5em}
+
+	\noindent Tada za jednu boju $i$ postoji barem $l_{i}$ elemenata koji su obojeni tom bojom.
+
+	\vspace{1.5em}
+
+	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 1.4}}
+	\vspace{0.5em}
+
+	\noindent Pretpostavimo suprotno:
+
+	\indent{0.5em}$\forall i \in \underline{r} (l_{i} > |\varphi^{-1}|)$\\
+	$<=> l_{i} \geq |\varphi^{-1}(i)|+1$\\
+	$<=> \sum_{i=1}^{r} l_{i} \geq \sum_{i=1}^{r}|\varphi^{-1}(i)|+r$\\
+	$<=> \sum_{i=1}^{r} l_{i} \geq n+r$\\
+	što je u kontradikciji sa pretpostavkom da je $\sum_{i=1}^{r} l_{i} \leq n+r-1$.
+
+
 	\newpage
 	
 	
