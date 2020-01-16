@@ -290,5 +290,32 @@
 	Slučaj za $|N|\geq R(m,n-1)$ se dokazuje analogno.
 	
 	\section{Granice remzijevih brojeva}
-	Pesic
+	Kako problem određivanja tačnih vrednosti Ramsey-evih brojeva važi za ekstremno težak, umesto tačnih vrednosti, za nepoznate Ramsey-eve brojeve se određuju gornje i donje granice.
+	\subsection{''Pascal-ov trougao`` za  Ramsey-eve brojeve}
+	''Pascal-ov trougao`` za  Ramsey-eve brojeve se konstruiše na osnovu Teoreme 2.3 i daje gornje granice za Ramsey-eve brojeve. Koristeći već poznate Ramsey-eve brojeve, i uslov koji je dodat u Teorimi 2.3, gornje granice se mogu dodatno smanjiti.
+	\newpage
+	Ovako izgledaju prvih devet redova trougla:
+	\tiny 
+\[R(2,2)=2\]
+\[R(2,3)=3\hspace{0.3cm}R(3,2)=3\]
+\[R(2,4)=4\hspace{0.3cm}R(3,3)=6\hspace{0.3cm}R(4,2)=4\]
+\[R(2,5)=5\hspace{0.3cm}R(3,4)=9\hspace{0.3cm}R(4,3)=9\hspace{0.3cm}R(5,2)=5\]
+\[R(2,6)=6\hspace{0.3cm}R(3,5)=14\hspace{0.3cm}R(4,4)=18\hspace{0.3cm}R(5,3)=14\hspace{0.3cm}R(6,2)=6\]
+\[R(2,7)=7\hspace{0.3cm}R(3,6)=18\hspace{0.3cm}R(4,5)=25\hspace{0.3cm}R(5,4)=25\hspace{0.3cm}R(6,3)=18\hspace{0.3cm}R(7,2)=7\]
+\[R(2,8)=8\hspace{0.3cm}R(3,7)=23\hspace{0.3cm}R(4,6)\leq 43\hspace{0.3cm}R(5,5)\leq 50\hspace{0.3cm}R(6,4)\leq 43\hspace{0.3cm}R(7,3)=23\hspace{0.3cm}R(8,2)=8\]
+\[R(2,9)=9\hspace{0.3cm}R(3,8)=28\hspace{0.3cm}R(4,7)\leq 66\hspace{0.3cm}R(5,6)\leq 93\hspace{0.3cm}R(6,5)\leq 93\hspace{0.3cm}R(7,4)\leq 66\hspace{0.3cm}R(8,3)=28\hspace{0.3cm}R(9,2)=9\]
+\[R(2,10)=10\hspace{0.3cm}R(3,9)=36\hspace{0.3cm}R(4,8)\leq 94\hspace{0.3cm}R(5,7)\leq 159\hspace{0.3cm}R(6,6)\leq 186\hspace{0.3cm}R(7,5)\leq 159\hspace{0.3cm}R(8,4)\leq 94\hspace{0.3cm}R(9,3)=36\hspace{0.3cm}R(10,2)=10\]
+\normalsize
+\subsection{Donje granice za Ramsey-eve brojeve oblika R(k,k)}
+{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 3.1}}
+Neka su dati prirodni brojevi $n$ i $k$, takvi da $n\geq k>0$. Ako je
+\[\binom{n}{k}2^{1-\binom{k}{2}}<1,\]
+onda važi $R(k,k)>n$.\\
+{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 3.1}} todo!\\
+{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 3.2}} Postoji $c>0$, takvo da za sve $k\in \mathbb{N}\setminus\{0\}$ važi:
+\[R(k,k)\geq c\cdot k\cdot\sqrt{2^k}\]\\
+{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 3.2}} todo!
+\subsection{Poznate granice}
+Do sada poznate netrivijalne granice se mogu videti u sledećoj tabeli:\\
+\includegraphics[width=\textwidth]{poznateGranice.png} %Uzeto sa https://www.combinatorics.org/ojs/index.php/eljc/article/view/DS1
 \end{document}
