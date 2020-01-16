@@ -70,8 +70,7 @@
 	\newpage
 	
 	\section{Uvod u Remzijevu teoriju}
-	Obrad
-	\newline
+	
 	\noindent Naziv je dat u čast britanskog matematičara, Frank Plumpton Ramsey-a, koji je objavio članak
 	1928. sa dokazom koji je danas poznat kao Remzijeva teorija. Opšte shvatanje ove teoreme često glasi:
 	''U svakom neredu postoji red.'', ali shvatanje koje je prikladnije ovom radu je ideja da svaka
@@ -80,49 +79,50 @@
 
 	\subsection{Dirihlet-ov princip}
 	\vspace{0.5em}
+	
+	Počnimo najpre od jednog opšte poznatog problema.	
+	\vspace{0.5em}
+	\\
 	{\noindent\fontsize{12pt}{12pt}\textbf{Primer}}
 	\vspace{0.5em}
-
-	\noindent Ako se $n$ + 1 zečeva smesti u n kaveza, onda će se bar dva zeca naći u istom kavezu.
+ 	
+	\noindent Ako se $n + 1$ zečeva smesti u n kaveza, onda će se bar dva zeca naći u istom kavezu.
 	\vspace{1.5em}
 
 	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz}}
 	\vspace{0.5em}	
 
-	\noindent Pretpostavimo da svaka kutija sadrži najviše jedan predmet. Tada je ukupan broj predmeta
-	najviše n, što je u suprotnosti sa pretpostavkom da ima n + 1 predmeta. 
+	\noindent Pretpostavimo da svaka kutija sadrži najviše jednog zeca. Tada je ukupan broj zečeva
+	najviše n, što je u suprotnosti sa pretpostavkom da ima n + 1 zečeva. 
 	\vspace{1.5em}	
 
 	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 1.1}}
 	\vspace{0.5em}
 
-	\noindent Ako su A i B konačni skupovi i |A| > |B|, onda ne postoji injektivno preslikavanje skupa A u
+	\noindent Ako su $A$ i $B$ konačni skupovi i |A| > |B|, onda ne postoji injektivno preslikavanje skupa A u
 	skup B.
 	\vspace{1.5em}
 
 	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 1.1}}
 	\vspace{0.5em}	
 
-	\noindent Neka su A i B konačni skupovi i |A| > |B|. Kada bismo injektivno preslikali skup A
-	u skup X, tada bi skup X imao barem |A| elemenata. U tom slučaju skupovi B i X, nikada ne bi mogli
-	da budu isti, dakle injektivno preslikavanje skupa A u skup B ne postoji.
+	\noindent Neka su $A$ i $B$ konačni skupovi i $|A| > |B|$. Kada bismo injektivno preslikali skup A
+	u skup $X$, tada bi skup X imao bar $|A|$ elemenata. U tom slučaju skupovi $B$ i $X$ ne mogu da budu isti, dakle injektivno preslikavanje skupa $A$ u skup $B$ ne postoji.
 
 	\vspace{0.5em}
 	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 1.2}}
 	\vspace{0.5em}
 
-	\noindent Neka je A konačan skup i neka je 0 < r < |A|.
-	Ako svaki element skupa A obojimo sa jednom od datih r boja, onda su najmanje dva
+	\noindent Neka je A konačan skup i neka je $0 < r < |A|$.
+	Ako svaki element skupa A obojimo sa jednom od datih $r$ boja, onda su najmanje dva
 	elementa obojena istom bojom.
 	\vspace{1.5em}
 
 	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 1.2}}
 	\vspace{0.5em}	
 
-	\noindent Pretpostavimo da je svaki element iz skupa A obojen različitom bojom. Tada bismo
-	imali |A| različitih boja što je u suprotnosti sa pretpostavkom da ima r < |A| boja.
-	
-	kockica
+	\noindent Pretpostavimo da je svaki element iz skupa $A$ obojen različitom bojom. Tada bismo
+	imali $|A|$ različitih boja što je u suprotnosti sa pretpostavkom da ima $r < |A|$ boja.	$\blacksquare$\\
 
 	\noindent Remzijeva teorija se može primeniti i objasniti na više načina, ali uz pomoć boja 
 	je objašnjenje dosta intuitivno te će nam ovakav način razmišljanja olakšati razumevanje same Remzijeve teoreme.
@@ -146,11 +146,9 @@
 	\vspace{0.5em}
 
 	% hir
-	\noindent Neka su dati $n, r \in \mathbb{N}$, kao i $l_{1},...,l_{r} \in \mathbb{N}$ gde je,
-	\vspace{0.5em}
+	\noindent Neka su dati $n, r \in \mathbb{N}$, kao i $l_{1},...,l_{r} \in \mathbb{N}$ gde je
 	
-	\indent $l_{1}+\dots+l_{r} \leq n+r-1$.
-	\vspace{0.5em}
+	\[l_{1}+\dots+l_{r} \leq n+r-1.\]
 
 	% hir
 	\noindent Tada za svako bojenje $\varphi:\underline{n} \rightarrow \underline{r}$ postoji $i \in r$, takvo da važi $|\varphi^{-1}(i)| \geq l_{i}.$
@@ -175,10 +173,9 @@
 
 	\noindent Pretpostavimo suprotno:
 
-	\indent{0.5em}$\forall i \in \underline{r} (l_{i} > |\varphi^{-1}|)$\\
-	$<=> l_{i} \geq |\varphi^{-1}(i)|+1$\\
-	$<=> \sum_{i=1}^{r} l_{i} \geq \sum_{i=1}^{r}|\varphi^{-1}(i)|+r$\\
-	$<=> \sum_{i=1}^{r} l_{i} \geq n+r$\\
+	\[(\forall i \in \underline{r}) (l_{i} > |\varphi^{-1}(i)|) \quad \text{tj.}\quad (\forall i \in \underline{r})(l_{i} \geq |\varphi^{-1}(i)|+1)\]
+	Odatle sledi \[ \sum_{i=1}^{r} l_{i} \geq \sum_{i=1}^{r}|\varphi^{-1}(i)|+r\] 
+	\\tj. $ \sum_{i=1}^{r} l_{i} \geq n+r$,
 	što je u kontradikciji sa pretpostavkom da je $\sum_{i=1}^{r} l_{i} \leq n+r-1$.
 
 
@@ -265,8 +262,6 @@
 	\[{m+n-3\choose m-2}+{m+n-3\choose m-1}={m+n-2\choose m-1}\rightarrow (m,n)\] 
 	\\
 	\vspace{0.7em} tj. $R(m,n) \leq {m+n-2\choose m-1}$, što je i trebalo dokazati. 
-	
-	\newpage
 	
 	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 2.3}}
 	Za $m,n\geq 2$  važi sledeće:
