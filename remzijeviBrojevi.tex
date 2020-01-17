@@ -131,14 +131,14 @@
 	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 1.3}}
 	\vspace{0.5em}
 
-	\noindent Ako je A skup od $n$ elemenata i ako je dato $n \in \mathbb{N}\ {0}$, gde je $r$ < $n$, onda svaka particija
+	\noindent Ako je A skup od $n$ elemenata i ako je dato $n \in \mathbb{N}\setminus \lbrace 0 \rbrace$, gde je $r$ < $n$, onda svaka particija
 	skupa A sa $r$ klasa ima najmanje jednu klasu sa bar dva elementa.
 	\vspace{1.5em}
 
 	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 1.3}}
 	\vspace{0.5em}
 
-	\noindent Isto kao u Teoremi 1.2, ali u ovom slucaju boje su predstavljene kao klase.
+	\noindent Isto kao u Teoremi 1.2, ali u ovom slučaju boje su predstavljene kao klase.
 	Klase mogu biti bilo šta, a ne samo boje.
 
 	\vspace{0.5em}
@@ -161,7 +161,7 @@
 	neki broj $l_{i} \in \mathbb{N}$ i važi
 	\vspace{0.5em}
 
-	\indent $l_{1}+\dots+l_{r} \leq n+r-1$.
+	\[l_{1}+\dots+l_{r} \leq n+r-1\]
 	\vspace{0.5em}
 
 	\noindent Tada za jednu boju $i$ postoji barem $l_{i}$ elemenata koji su obojeni tom bojom.
@@ -184,14 +184,18 @@
 	
 	\section{Remzijevi brojevi}
 	\vspace{1em}
-	{\fontsize{12pt}{12pt}\textbf{Definicija}}
+	\begin{mdframed}
+	{\fontsize{12pt}{12pt}\textbf{Definicija 2.1 (Remzijev broj za dve boje)}}
 	\vspace{0.5em}	
 	\\
 	Remzijev broj $R(l_{1}, l_{2})$ je najmanje $n \in \mathbb{N}$ \textbackslash {} $\left\lbrace 0\right\rbrace $ takvo da $n\rightarrow(l_{1}, l_{2})$.
+	\end{mdframed}
 	
+	\noindent Remzijev broj postoji za svako $l_1$ i $l_2$.
 	
-	\vspace{1em}
-	{\noindent\fontsize{12pt}{12pt}\textbf{Primer}}
+	\vspace{0.7em}
+	
+	{\noindent\fontsize{12pt}{12pt}\textbf{Primer 2.1}}
 	\vspace{0.5em}
 	\\	
 	Pronađimo $R(3,3)$ :
@@ -213,7 +217,7 @@
 	\\Dokazali smo da je $6 \rightarrow (3, 3)$, a sada još treba dokazati da ne važi $5 \rightarrow (3, 3)$. Za to je dovoljno da pronađemo kontra primer bojenja u kojem uslov nije ispunjen:
 	\begin{figure}[h]
 	\centering
-	\includegraphics[scale=1.3]{r33kp.png}
+	\includegraphics[scale=1.1]{r33kp.png}
 	\end{figure}
 	
 	Dakle, $R(3,3)=6$ .	
@@ -287,14 +291,52 @@
 	\[|M|\geq R(m-1,n)-1 \quad \text{ili} \quad  |N|\geq R(m,n-1)\] 
 	Međutim, kako znamo da je $|M|$ paran broj a $R(m-1,n)-1$ neparan broj, nejednakost se može pojačati na $|M|\geq R(m-1,n)$. \\
 	Pretpostavimo da važi $|M|\geq R(m-1,n)$. To znači da podgraf grafa G indukovan čvorovima iz skupa $M$ sadrži crveni $\bf K_n$ graf (u tom slučaju je kraj dokaza) ili plavi $\bf K_{m-1}$ graf koji zajedno sa čvorom $v_1$ čini plavi $\bf K_{m}$ graf (kraj dokaza).\\
-	Slučaj za $|N|\geq R(m,n-1)$ se dokazuje analogno.
+	Slučaj za $|N|\geq R(m,n-1)$ se dokazuje analogno.\\
 	
+	\begin{mdframed}
+	{\noindent\fontsize{12pt}{12pt}\textbf{Definicija 2.2}}\\
+	$(l_1, l_2)$-Remzi-graf je graf koji ne sadrži ni potpun podgraf sa $l_1$ čvorova ni nezavisan skup sa $l_2$ čvorova.
+	
+	\end{mdframed}
+	
+	Za svako $l_1$ i $l_2$ postoji konačan broj $(l_1, l_2)$-Remzi grafova, ali je određivanje njihovog tačnog broja vrlo teško, baš kao i određivanje samih Remzijevih brojeva. Da bi graf bio $(l_1, l_2)$-Remzi graf, on ne sme imati više of $R(l_1, l_2)-1$ čvorova.\\
+	Kao što smo već videli u Primeru 2.1, graf $C_5$ je Remzi-graf za (3,3).
+	
+	\newpage
+	
+
+	\noindent Definicija Remzijevog broja se može uopštiti: 	
+	
+	\begin{mdframed}
+	\vspace{0.4em}
+	
+	{\fontsize{12pt}{12pt}\textbf{Definicija 2.3 (Uopšteni Remzijev broj)}}
+	\\
+	
+	\vspace{-0.8em}
+	Remzijev broj $R(l_{1}, l_{2}, ... , l_{k})$ je najmanje $n \in \mathbb{N}$ \textbackslash {} $\left\lbrace 0\right\rbrace $ takvo da $n\rightarrow(l_{1}, l_{2},  ... , l_{k})$.
+	\end{mdframed}
+	
+	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 2.4}}
+	\vspace{0.4em}
+	\\
+	Za $c>2$ važi $R(l_1, l_2, ... , l_c) \leq R(l_1, l_2, ... , l_{c-2}, R(l_{c-1}, l_c))$
+	
+	\vspace{0.3em}
+	
+	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 2.4}}
+	\vspace{0.4em}
+	
+	\noindent Uočimo kompletan graf G od $R(l_1, l_2, ... , l_{c-2}, R(l_{c-1}, l_c))$ čvorova, i neka su njegove grane obojene u $c$ boja. Sada zamislimo da su $c-1$ i $c$ ista boja. Tada su grane grafa G obojene u $c-1$ boja. Tada po definiciji  $R(l_1, l_2, ... , l_{c-2}, R(l_{c-1}, l_c))$ graf G sadrži ili $K_{l_i}$ čije su grane obojene u boju $i$ za neko $1 \leq i \leq c-2$ ili sadrži $K_{R(l_{c-1}, l_c)}$ čije su grane obojene u mešanu $c-1$ i $c$ boju. Ako se radi o prvom slučaju, to je kraj dokaza. Ako se radi o drugom slučaju, to znači da imamo ili $K_{n_{c-1}}$ graf čije su grane obojene u boju $c-1$, ili $K_{n_{c}}$ graf čije su grane obojene u boju $c$, i time je dokaz završen.
+	
+	\newpage
 	\section{Granice remzijevih brojeva}
 	Kako problem određivanja tačnih vrednosti Ramsey-evih brojeva važi za ekstremno težak, umesto tačnih vrednosti, za nepoznate Ramsey-eve brojeve se određuju gornje i donje granice.
 	\subsection{''Pascal-ov trougao`` za  Ramsey-eve brojeve}
 	''Pascal-ov trougao`` za  Ramsey-eve brojeve se konstruiše na osnovu Teoreme 2.3 i daje gornje granice za Ramsey-eve brojeve. Koristeći već poznate Ramsey-eve brojeve, i uslov koji je dodat u Teorimi 2.3, gornje granice se mogu dodatno smanjiti.
-	\newpage
-	Ovako izgledaju prvih devet redova trougla:
+	\vspace{0.2em}
+	\noindent Ovako izgledaju prvih devet redova trougla:
+	\vspace{0.5em}
 	\tiny 
 \[R(2,2)=2\]
 \[R(2,3)=3\hspace{0.3cm}R(3,2)=3\]
