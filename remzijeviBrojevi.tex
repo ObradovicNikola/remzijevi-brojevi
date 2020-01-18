@@ -382,23 +382,18 @@ Iz ovoga dobijamo da postoji neko bojenje grafa $K_n$ takvo da ne sadrži monohr
 \subsubsection{Gornje granice}
 
 {\noindent\fontsize{12pt}{12pt}\textbf{Teorema 3.4}}\\
-Važi $R(k,k)\leq \binom{2k-4}{k-2}$.\\
-{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 3.4}} ???\\
-
-{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 3.5}}\\
 Važi $R(k,k)<4^k$.\\
-{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 3.5}}\\
-Iz teoreme 3.4 znamo da važi $R(k,k)\leq \binom{2k-4}{k-2}$. Pokazaćemo da važi $\binom{2k-4}{k-2}<4^k$:
+{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 3.4}}\\
+Iz teoreme 2.2 znamo da važi $R(k,k)\leq \binom{2k-2}{k-1}$. Pokazaćemo da važi $\binom{2k-2}{k-1}<4^k$:
 \begin{flalign}
-\binom{2k-4}{k-2}&=\frac{(2k-4)!}{((2k-4)-(k-2))!(k-2)!}\nonumber &&\\
-&=\frac{((2k-4)(2k-6)(2k-8)\cdots(4)(2))((2k-5)(2k-7)(2k-9)\cdots(3)(1))}{(k-2)!(k-2)!}\nonumber &&\\
-&=\frac{2^k(k-2)!((2k-5)(2k-7)(2k-9)\cdots(3)(1))}{(k-2)!(k-2)!}\nonumber &&\\
-&=\frac{2^k(2k-5)(2k-7)(2k-9)\cdots(3)(1)}{(k-2)!}\nonumber &&\\
-&=2^k\frac{2k-5}{k-2}\frac{2k-7}{k-3}\frac{2k-9}{k-4}\cdots\frac{3}{2}\frac{1}{1}\nonumber &&\\
+\binom{2k-2}{k-1}&=\frac{(2k-2)!}{((2k-2)-(k-1))!(k-1)!}\nonumber &&\\
+&=\frac{((2k-2)(2k-4)(2k-6)\cdots(4)(2))((2k-3)(2k-5)(2k-7)\cdots(3)(1))}{(k-1)!(k-1)!}\nonumber &&\\
+&=\frac{2^k(k-1)!((2k-3)(2k-5)(2k-7)\cdots(3)(1))}{(k-1)!(k-1)!}\nonumber &&\\
+&=\frac{2^k(2k-3)(2k-5)(2k-7)\cdots(3)(1)}{(k-1)!}\nonumber &&\\
+&=2^k\frac{2k-3}{k-1}\frac{2k-5}{k-2}\frac{2k-7}{k-3}\cdots\frac{3}{2}\frac{1}{1}\nonumber &&\\
 &<2^k(2^k)\nonumber &&\\
-\binom{2k-4}{k-2}&<4^k\nonumber &&
+\binom{2k-2}{k-1}&<4^k\nonumber &&
 \end{flalign}
-
 
 Trenutnu najbolju gornju granicu za Ramsey-eve brojeve oblika R(k,k) je dokazao David Conlon u 2010, i glasi:
 \[R(k+1,k+1)\leq k^{-C\frac{\log{k}}{\log{\log{k}}}}\binom{2k}{k}\]
