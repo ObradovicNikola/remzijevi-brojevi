@@ -348,8 +348,11 @@
 \[R(2,9)=9\hspace{0.3cm}R(3,8)=28\hspace{0.3cm}R(4,7)\leq 66\hspace{0.3cm}R(5,6)\leq 93\hspace{0.3cm}R(6,5)\leq 93\hspace{0.3cm}R(7,4)\leq 66\hspace{0.3cm}R(8,3)=28\hspace{0.3cm}R(9,2)=9\]
 \[R(2,10)=10\hspace{0.3cm}R(3,9)=36\hspace{0.3cm}R(4,8)\leq 94\hspace{0.3cm}R(5,7)\leq 159\hspace{0.3cm}R(6,6)\leq 186\hspace{0.3cm}R(7,5)\leq 159\hspace{0.3cm}R(8,4)\leq 94\hspace{0.3cm}R(9,3)=36\hspace{0.3cm}R(10,2)=10\]
 \normalsize
-\subsection{Donje granice za Ramsey-eve brojeve oblika R(k,k)}
+\subsection{Granice za Ramsey-eve brojeve oblika R(k,k)}
+Prve granica za Ramsey-eve brojeve oblika R(k,k) je ustanovio  Erd\"os 1947 godine i glase:
+\[2^\frac{k}{2}<R(k,k)<4^k,\]
 
+\subsubsection{Donje granica}
 {\noindent\fontsize{12pt}{12pt}\textbf{Teorema 3.1}}\\
 Neka su dati prirodni brojevi $n$ i $k$, takvi da $n\geq k>0$. Ako je
 \[\binom{n}{k}2^{1-\binom{k}{2}}<1,\]
@@ -374,7 +377,32 @@ Iz ovoga dobijamo da postoji neko bojenje grafa $K_n$ takvo da ne sadrži monohr
 
 {\noindent\fontsize{12pt}{12pt}\textbf{Teorema 3.3}} Postoji $c>0$, takvo da za sve $k\in \mathbb{N}\setminus\{0\}$ važi:
 \[R(k,k)\geq c\cdot k\cdot\sqrt{2^k}\]
-{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 3.3}} not happening!
+{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 3.3}} not happening!\\
+
+\subsubsection{Gornje granice}
+
+{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 3.4}}\\
+Važi $R(k,k)\leq \binom{2k-2}{k-1}$.\\
+{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 3.4}} ???\\
+
+{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 3.5}}\\
+Važi $R(k,k)<4^k$.\\
+{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 3.5}}\\
+Iz teoreme 3.4 znamo da važi $R(k,k)\leq \binom{2k-2}{k-1}$. Pokazaćemo da važi $\binom{2k-2}{k-1}<4^k$:
+\begin{flalign}
+\binom{2k-4}{k-2}&=\frac{(2k-4)!}{((2k-4)-(k-2))!(k-2)!}\nonumber &&\\
+&=\frac{((2k-4)(2k-6)(2k-8)\cdots(4)(2))((2k-5)(2k-7)(2k-9)\cdots(3)(1))}{(k-2)!(k-2)!}\nonumber &&\\
+&=\frac{2^k(k-2)!((2k-5)(2k-7)(2k-9)\cdots(3)(1))}{(k-2)!(k-2)!}\nonumber &&\\
+&=\frac{2^k(2k-5)(2k-7)(2k-9)\cdots(3)(1)}{(k-2)!}\nonumber &&\\
+&=2^k\frac{2k-5}{k-2}\frac{2k-7}{k-3}\frac{2k-9}{k-4}\cdots\frac{3}{2}\frac{1}{1}\nonumber &&\\
+&<2^k(2^k)\nonumber &&\\
+\binom{2k-4}{k-2}&<4^k\nonumber &&
+\end{flalign}
+
+
+Trenutnu najbolju gornju granicu za Ramsey-eve brojeve oblika R(k,k) je dokazao David Conlon u 2010, i glasi:
+\[R(k+1,k+1)\leq k^{-C\frac{\log{k}}{\log{\log{k}}}}\binom{2k}{k}\]
+gde je C neka konstanta.
 \subsection{Poznate granice}
 Do sada poznate netrivijalne granice se mogu videti u sledećoj tabeli:\\
 \includegraphics[width=\textwidth]{poznateGranice.png} %Uzeto sa https://www.combinatorics.org/ojs/index.php/eljc/article/view/DS1
