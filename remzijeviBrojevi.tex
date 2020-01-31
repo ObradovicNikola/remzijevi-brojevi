@@ -79,7 +79,7 @@
 	\section{Uvod u Remzijevu teoriju}
 	
 	\noindent Naziv je dat u čast britanskog matematičara, Frank Plumpton Ramsey-a, koji je objavio članak
-	1928. sa dokazom koji je danas poznat kao Remzijeva teorija. Opšte shvatanje ove teoreme često glasi:
+	1928. sa dokazom koji je danas poznat kao Remzijeva teorema. Opšte shvatanje ove teoreme često glasi:
 	''U svakom neredu postoji red.'', ali shvatanje koje je prikladnije ovom radu je ideja da svaka
 	struktura sadrži uređenu podstrukturu. Međutim, da bismo shvatili Remzijevu teoriju, moramo uvesti
 	određene matematičke pojmove.
@@ -94,13 +94,13 @@
 	\vspace{0.5em}
  	
 	\noindent Ako se $n + 1$ zečeva smesti u n kaveza, onda će se bar dva zeca naći u istom kavezu.
-	\vspace{1.5em}
+	\vspace{0.5em}
 
 	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz}}
 	\vspace{0.5em}	
 
-	\noindent Pretpostavimo da svaka kutija sadrži najviše jednog zeca. Tada je ukupan broj zečeva
-	najviše n, što je u suprotnosti sa pretpostavkom da ima n + 1 zečeva. 
+	\noindent Pretpostavimo da svaki kavez sadrži najviše jednog zeca. Tada je ukupan broj zečeva
+	najviše n, što je u suprotnosti sa pretpostavkom da ima n + 1 zečeva. Dakle, postoji bar jedan kavez u kojem se nalaze bar 2 zeca. $\blacksquare$
 	\vspace{1.5em}	
 
 	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 1.1}}
@@ -108,46 +108,52 @@
 
 	\noindent Ako su $A$ i $B$ konačni skupovi i $|A| > |B|$, onda ne postoji injektivno preslikavanje skupa $A$ u
 	skup $B$.
-	\vspace{1.5em}
+	\vspace{0.5em}
 
 	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 1.1}}
 	\vspace{0.5em}	
 
-	\noindent Neka su $A$ i $B$ konačni skupovi i $|A| > |B|$. Kada bismo injektivno preslikali skup A
-	u skup $X$, tada bi skup $X$ imao bar $|A|$ elemenata. U tom slučaju skupovi $B$ i $X$ ne mogu da budu isti, dakle injektivno preslikavanje skupa $A$ u skup $B$ ne postoji.
+	\noindent  Kada bismo injektivno preslikali skup A
+	u skup $B$, tada bi skup $B$ imao bar $|A|$ elemenata, tj. važilo bi $|A| \leq |B|$. Dakle injektivno preslikavanje skupa $A$ u skup $B$ ne postoji. $\blacksquare$
 
-	\vspace{0.5em}
+	\vspace{1.5em}
 	{\noindent\fontsize{12pt}{12pt}\textbf{Primer}}
 	\vspace{0.5em}
 
 	\noindent Neka je $A$ konačan skup i neka je $0 < r < |A|$.
 	Ako svaki element skupa A obojimo sa jednom od datih $r$ boja, onda su najmanje dva
 	elementa obojena istom bojom.
-	\vspace{1.5em}
+	\vspace{0.5em}
 
-	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz primera}}
+	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz}}
 	\vspace{0.5em}	
 
 	\noindent Pretpostavimo da je svaki element iz skupa $A$ obojen različitom bojom. Tada bismo
 	imali $|A|$ različitih boja što je u suprotnosti sa pretpostavkom da ima $r < |A|$ boja. $\blacksquare$\\
 
+	\vspace{0.8em}
+
 	\noindent Remzijeva teorija se može primeniti i objasniti na više načina, ali uz pomoć boja 
 	je objašnjenje dosta intuitivno te će nam ovakav način razmišljanja olakšati razumevanje same Remzijeve teoreme.
 
-	\vspace{0.5em}
-	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 1.3}}
+	\vspace{0.8em}
+	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 1.2}}
 	\vspace{0.5em}
 
-	\noindent Ako je $A$ skup od $n$ elemenata i ako je dato $r \in \mathbb{N}\setminus \lbrace 0 \rbrace$, gde je $r$ < $n$, onda svaka podela skupa $A$ na $r$ particija ima najmanje jednu particiju sa bar dva elementa.
+	\noindent Ako je $A$ skup od $n$ elemenata i ako je dato $r \in \mathbb{N}\setminus \lbrace 0 \rbrace$, gde je $r$ < $n$, onda svaka podela skupa $A$ na $r$ klasa ima najmanje jednu klasu sa bar dva elementa.
 	\vspace{1.5em}
 
-	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 1.3}}
+	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 1.2}}
 	\vspace{0.5em}
 
-	\noindent Isto kao u Teoremi 1.2, ali u ovom slučaju boje su predstavljene kao particije.
-	Particije mogu biti bilo šta, a ne samo boje.
+	\noindent Isto kao u Teoremi 1.1, ali u ovom slučaju boje su predstavljene kao klase.
+	Klase mogu biti bilo šta, a ne samo boje. $\blacksquare$
 
-	\vspace{0.5em}
+	\vspace{0.7em}
+	
+	\noindent Radi kraćeg i lakšeg zapisa u narednim teoremama, uvešćemo nekoliko definicija.
+	
+	\vspace{0.7em}	
 	
 	\begin{mdframed}
 	
@@ -169,7 +175,7 @@
 	
 		\vspace{1em}	
 	
-	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 1.4}}
+	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 1.3}}
 	\vspace{0.5em}
 
 	% hir
@@ -195,7 +201,7 @@
 
 	\vspace{1.5em}
 
-	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 1.4}}
+	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 1.3}}
 	\vspace{0.5em}
 
 	\noindent Pretpostavimo suprotno:
@@ -203,24 +209,24 @@
 	\[(\forall i \in \underline{r}) (l_{i} > |\varphi^{-1}(i)|) \quad \text{tj.}\quad (\forall i \in \underline{r})(l_{i} \geq |\varphi^{-1}(i)|+1)\]
 	Odatle sledi \[ \sum_{i=1}^{r} l_{i} \geq \sum_{i=1}^{r}|\varphi^{-1}(i)|+r\] 
 	\\tj. $ \sum_{i=1}^{r} l_{i} \geq n+r$,
-	što je u kontradikciji sa pretpostavkom da je $\sum_{i=1}^{r} l_{i} \leq n+r-1$.
+	što je u kontradikciji sa pretpostavkom da je $\sum_{i=1}^{r} l_{i} \leq n+r-1$. $\blacksquare$
 
 	\newpage
 	\subsection{Uvod u Remzijeve brojeve}
 	\vspace{1.5em}
 	
-	Da bismo uspešno definisali Remzijeve brojeve, neophodno je najpre da uvedemo nekoliko definicija.
+	Da bismo uspešno definisali Remzijeve brojeve, neophodno je najpre da uvedemo još nekoliko definicija.
 
 	\begin{mdframed}
 	{\noindent\fontsize{12pt}{12pt}\textbf{Definicija 1.3}}
 	\vspace{0.5em}
 
-	\noindent Neka je $X$ skup obojen u $r$ boja ($\chi : X \rightarrow \underline{r}$). Podskup $Y \subseteq X$ nazivamo monohromatskim (u odnosu na $\chi$), ako za svako $y_1, y_2 \in Y$ važi
+	\noindent Neka su elementi skupa $X$ obojeni u $r$ boja ($\chi : X \rightarrow \underline{r}$). Podskup $Y \subseteq X$ nazivamo monohromatskim (u odnosu na $\chi$), ako za svako $y_1, y_2 \in Y$ važi
 	\[\chi(y_1) = \chi(y_2)\]
 	\end{mdframed}
 	\vspace{0.5em}
 	
-	\noindent Za narednih nekoliko definicija važno je napomenuti da se pod $[X]^{k}$ misli na sve $k$-elementne podskupove skupa $X$.
+	\noindent Za narednih nekoliko definicija važno je napomenuti da se pod $[X]^{k}$ misli na sve \\ \textbf{$\textbf{k}$-elementne podskupove skupa $\textbf{X}$}.
 
 	\begin{mdframed}
 	{\noindent\fontsize{12pt}{12pt}\textbf{Definicija 1.4}}
@@ -237,7 +243,7 @@
 	\vspace{0.5em}
 
 	\noindent Po granama obojen graf je uredena četvorka $(V, E, C, \chi)$, gde je $(V, E)$ graf, $C$ skup boja,
-	a $\chi : E \rightarrow C$ funkcija (koja svakoj grani dodeljuje boju).
+	a $\chi : E \rightarrow C$ funkcija (koja svakoj grani dodeljuje boju). Graf
 	$(V, E, C, \chi)$ je potpun ako je $(V, E)$ potpun.
 	\end{mdframed}
 	\vspace{0.5em}
@@ -273,17 +279,26 @@
 	\end{mdframed}
 	\vspace{0.5em}
 
+	\begin{mdframed}
+	{\noindent\fontsize{12pt}{12pt}\textbf{Definicija 1.9}}
+	\vspace{0.5em}
+
+	\noindent Za prirodan broj $n$ kažemo da je "dovoljan" za $l_1, l_2 \in \mathbb{N}$ ako za svako bojenje grana kompletnog grafa od $n$ čvorova ($K_n$) u 2 boje (boja 1 i boja 2) postoji 1-monohromatski podgraf reda $l_1$, ili 2-monohromatski podgraf reda $l_2$. To se zapisuje na sledeći način: \[n \rightarrow (l_{1}, l_{2})\] 
+	\end{mdframed}
+	
+	\noindent Prethodna definicija se može uopštiti za $l_1, l_2, ... , l_k  \in \mathbb{N}$, i tada pišemo \[n \rightarrow (l_1, l_2, ... , l_k)\]
+	\vspace{0.5em}
 
 	
 
-	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 2.1}}
+	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 1.5}}
 	\vspace{0.5em}
 
 	\noindent	Neka $l_{1}, l_{2} \in N$. Tada postoji $n$, takvo da važi
-	\[n \rightarrow (l_{1}, l_{2})\] DEFINISATI OVO PRVO!!!
+	\[n \rightarrow (l_{1}, l_{2})\] dokaz???
 	\vspace{1.5em}\
 
-	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 2.2}}
+	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 1.6}}
 	\vspace{0.5em}
 
 	\noindent	Ako $l_{1}, l_{2} \in N$ i ako za neke $m_{1}, m_{2} \in N$ važi	
@@ -292,7 +307,7 @@
 	\[m_{1} + m_{2} \rightarrow (l_{1}, l_{2}).\]
 	\vspace{1.5em}
 
-	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 2.2}}
+	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 1.6}}
 	\vspace{0.5em}
 
 	\noindent	Od $m_{1}+m_{2}$ čvorova izaberemo čvor $A$, bez umanjenja opštosti. Posmatrajmo sada preostalih $m_1+m_2-1$ čvorova.\\ Iz uopštenog Dirihletovog principa $(m_{1}+m_{2} \leq (m_{1}+m_{2}-1)+2-1)$ sledi da se
@@ -306,17 +321,17 @@
 	\noindent $1^\circ $ $A$ je sused sa $m_{1}$ čvorova\\
 	
 	Iz uslova zadatka je poznato $m_{1} \rightarrow (l_{1}-1, l_{2})$\\
-	\indent a) Imamo monohromatski graf reda $l_{1}-1$ , a zajedno sa $A$ ti čvorovi čine monohromatski podgraf reda  $l_{1}$. \\
+	\indent a) Među tih $m_1$ čvorova imamo monohromatski podgraf reda $l_{1}-1$ , a zajedno sa $A$ ti čvorovi čine monohromatski podgraf reda  $l_{1}$. \\
 	\indent b) Imamo $l_{2}$ čvorova koji međusobno nisu povezani, tj. monohromatski graf reda $l_{2}$.\\
 
 	\vspace{0.5em}
 	\noindent $2^\circ$ $A$ nije sused  sa  $m_{2}$ čvorova\\
 	
 	Iz uslova zadatka je poznato $m_{2} \rightarrow (l_{1}, l_{2}-1)$\\
-	\indent a) Imamo $l_{1}$ čvorova od kojih su svaka dva međusobno susedi, tj. monohromatski graf reda $l_{1}$.\\
-	\indent b) Imamo $l_{2}-1$ čvorova koji međusobno nisu susedi a zajedno sa $A$, ima ih $l_{2}$, tj. imamo monohromatski graf reda $l_{2}$. \hspace{0.5em}$\blacksquare$\\
+	\indent a) Među tih $m_{2}$ čvorova imamo $l_{1}$ čvorova od kojih su svaka dva međusobno susedi, tj. monohromatski podgraf reda $l_{1}$.\\
+	\indent b) Imamo $l_{2}-1$ čvorova koji međusobno nisu susedi a zajedno sa $A$, ima ih $l_{2}$ koji međusobno nisu susedi, tj. imamo monohromatski podgraf reda $l_{2}$. \hspace{0.5em}$\blacksquare$\\
 	
-	\newpage
+	
 	
 	
 	\section{Remzijevi brojevi}
@@ -359,7 +374,7 @@
 	
 	Dakle, $R(3,3)=6$ .	
 	
-	\newpage
+	\vspace{1em}	
 	
 	{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 2.1}}
 	\vspace{0.5em}	
@@ -439,7 +454,7 @@
 	Za svako $l_1$ i $l_2$ postoji konačan broj $(l_1, l_2)$-Remzi grafova, ali je određivanje njihovog tačnog broja vrlo teško, baš kao i određivanje samih Remzijevih brojeva. Da bi graf bio $(l_1, l_2)$-Remzi graf, on ne sme imati više of $R(l_1, l_2)-1$ čvorova.\\
 	Kao što smo već videli u Primeru 2.1, graf $C_5$ je Remzi-graf za (3,3).
 	
-	\newpage
+	
 	
 
 	\noindent Definicija Remzijevog broja se može uopštiti: 	
@@ -466,14 +481,13 @@
 	
 	\noindent Uočimo kompletan graf G od $R(l_1, l_2, ... , l_{c-2}, R(l_{c-1}, l_c))$ čvorova, i neka su njegove grane obojene u $c$ boja. Sada zamislimo da su $c-1$ i $c$ ista boja. Tada su grane grafa G obojene u $c-1$ boja. Tada po definiciji  $R(l_1, l_2, ... , l_{c-2}, R(l_{c-1}, l_c))$ graf G sadrži ili $K_{l_i}$ čije su grane obojene u boju $i$ za neko $1 \leq i \leq c-2$ ili sadrži $K_{R(l_{c-1}, l_c)}$ čije su grane obojene u mešanu $c-1$ i $c$ boju. Ako se radi o prvom slučaju, to je kraj dokaza. Ako se radi o drugom slučaju, to znači da imamo ili $K_{n_{c-1}}$ graf čije su grane obojene u boju $c-1$, ili $K_{n_{c}}$ graf čije su grane obojene u boju $c$, i time je dokaz završen.
 	
-	\newpage
 	\section{Granice remzijevih brojeva}
 	Kako problem određivanja tačnih vrednosti Ramsey-evih brojeva važi za ekstremno težak, umesto tačnih vrednosti, za nepoznate Ramsey-eve brojeve se određuju gornje i donje granice.
 	\subsection{''Pascal-ov trougao`` za  Ramsey-eve brojeve}
 	''Pascal-ov trougao`` za  Ramsey-eve brojeve se konstruiše na osnovu Teoreme 2.3 i daje gornje granice za Ramsey-eve brojeve. Koristeći već poznate Ramsey-eve brojeve, i uslov koji je dodat u Teorimi 2.3, gornje granice se mogu dodatno smanjiti.
 	\vspace{0.2em}
 	\noindent Ovako izgledaju prvih devet redova trougla:
-	\vspace{0.5em}
+	\vspace{2em}
 	\tiny 
 \[R(2,2)=2\]
 \[R(2,3)=3\hspace{0.3cm}R(3,2)=3\]
@@ -489,7 +503,7 @@
 Prve granice za Ramsey-eve brojeve oblika R(k,k) je ustanovio  Erd\"os 1947 godine i glase:
 \[2^\frac{k}{2}<R(k,k)<4^k,\]
 
-\subsubsection{Donje granica}
+\subsubsection{Donje granice Remzijevih brojeva}
 {\noindent\fontsize{12pt}{12pt}\textbf{Teorema 3.1}}\\
 Neka su dati prirodni brojevi $n$ i $k$, takvi da $n\geq k>0$. Ako je
 \[\binom{n}{k}2^{1-\binom{k}{2}}<1,\]
@@ -514,14 +528,15 @@ Iz ovoga dobijamo da postoji neko bojenje grafa $K_n$ takvo da ne sadrži monohr
 
 {\noindent\fontsize{12pt}{12pt}\textbf{Teorema 3.3}} Postoji $c>0$, takvo da za sve $k\in \mathbb{N}\setminus\{0\}$ važi:
 \[R(k,k)\geq c\cdot k\cdot\sqrt{2^k}\]
-{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 3.3}} not happening!\\
+Ovu teoremu nećemo dokazivati jer kompleksnost njenog dokaza prevazilazi namenu ovog rada.
 
-\subsubsection{Gornje granice}
+\subsubsection{Gornje granice Remzijevih brojeva}
 
 {\noindent\fontsize{12pt}{12pt}\textbf{Teorema 3.4}}\\
-Važi $R(k,k)<4^k$.\\
+Važi $R(k,k)<4^k$.
+\vspace{1em}\\
 {\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 3.4}}\\
-Iz teoreme 2.2 znamo da važi $R(k,k)\leq \binom{2k-2}{k-1}$. Pokazaćemo da važi $\binom{2k-2}{k-1}<4^k$:
+Iz teoreme 2.2 znamo da važi $R(k,k)\leq \binom{2k-2}{k-1}$. Pokazaćemo da važi $\binom{2k-2}{k-1}<4^k$:\\
 \begin{flalign}
 \binom{2k-2}{k-1}&=\frac{(2k-2)!}{((2k-2)-(k-1))!(k-1)!}\nonumber &&\\
 &=\frac{((2k-2)(2k-4)(2k-6)\cdots(4)(2))((2k-3)(2k-5)(2k-7)\cdots(3)(1))}{(k-1)!(k-1)!}\nonumber &&\\
