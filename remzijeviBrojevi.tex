@@ -484,7 +484,7 @@
 	\section{Granice remzijevih brojeva}
 	Kako problem određivanja tačnih vrednosti Ramsey-evih brojeva važi za ekstremno težak, umesto tačnih vrednosti, za nepoznate Ramsey-eve brojeve se određuju gornje i donje granice.
 	\subsection{''Pascal-ov trougao`` za  Ramsey-eve brojeve}
-	''Pascal-ov trougao`` za  Ramsey-eve brojeve se konstruiše na osnovu Teoreme 2.3 i daje gornje granice za Ramsey-eve brojeve. Koristeći već poznate Ramsey-eve brojeve, i uslov koji je dodat u Teorimi 2.3, gornje granice se mogu dodatno smanjiti.
+	''Pascal-ov trougao`` za  Ramsey-eve brojeve se konstruiše na osnovu Teoreme 2.3 i daje gornje granice za Ramsey-eve brojeve. Koristeći već poznate Ramsey-eve brojeve, gornje granice se mogu dodatno smanjiti.\\
 	\vspace{0.2em}
 	\noindent Ovako izgledaju prvih devet redova trougla:
 	\vspace{2em}
@@ -504,27 +504,31 @@ Prve granice za Ramsey-eve brojeve oblika R(k,k) je ustanovio  Erd\"os 1947 godi
 \[2^\frac{k}{2}<R(k,k)<4^k,\]
 
 \subsubsection{Donje granice Remzijevih brojeva}
-{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 3.1}}\\
+{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 3.1}}
+\vspace{0.5em} \\
 Neka su dati prirodni brojevi $n$ i $k$, takvi da $n\geq k>0$. Ako je
 \[\binom{n}{k}2^{1-\binom{k}{2}}<1,\]
 onda važi $R(k,k)>n$.\\
 
-{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 3.1}} \\
+{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 3.1}}
+\vspace{0.5em} \\
 Prvo, definišimo graf $K_n$ gde je svaka grana obojena nasumično plavo ili crveno (50\% šanse za plavo i 50\% šanse za crveno). Ako nasumično odaberemo k čvorova iz $K_n$, verovatnoća da je podgraf indukovan od strane tih $k$ čvorova monohromatski je $2^{1-\binom{k}{2}}$.\\
-Nakon toga, primetimo da je broj $K_k$ podgrafa u $K_n$ jednak $\binom{n}{k}$, kako je to ekvivalentno biranju $k$ od $n$ čvorova iz $K_n$. Iz ovoga se može zaključiti da je verovatnoća da postoji $K_k$ podgraf u kome su sve grane obojene istom bojom $\binom{n}{k}2^{1-\binom{k}{2}}$. Ako je ova verovatnoća manja od 1, onda postoji neki graf $K_n$ koji ne sadrži monohromatski $K_k$ podgraf. Iz toga dobijamo $R(k,k)>n$. \\ \\
+Nakon toga, primetimo da je broj indukovanih podgrafa sa $k$ čvorova u $K_n$ jednak $\binom{n}{k}$, kako je to ekvivalentno biranju $k$ od $n$ čvorova iz $K_n$. Iz ovoga se može zaključiti da je verovatnoća da postoji monohromatski podgraf indukovan od strane $k$ čvorova jednaka $\binom{n}{k}2^{1-\binom{k}{2}}$. Ako je ova verovatnoća manja od 1, onda postoji neki graf $K_n$ koji ne sadrži monohromatski podgraf indukovan od strane $k$ čvorova. Iz toga dobijamo $R(k,k)>n$. \\
 
-{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 3.2}} \\
+{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 3.2}}
+\vspace{0.5em} \\
 Za svako $k\geq 3$, važi $R(k,k)>2^{\frac{k}{2}}$. \\
 
-{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 3.2}} \\
-Zbog toga što $\frac{n!}{(n-k)!}=n(n-1)(n-2)...(n-k+1)<n^k$ i što se $2^{1-\binom{k}{2}}$ može zapisati kao $\frac{2^{1+\frac{k}{2}}}{2^{\frac{k^2}{2}}}$, važi:
+{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 3.2}}
+\vspace{0.5em} \\
+Zbog toga što važi $\frac{n!}{(n-k)!}=n(n-1)(n-2)...(n-k+1)<n^k$ i što se $2^{1-\binom{k}{2}}$ može zapisati kao $\frac{2^{1+\frac{k}{2}}}{2^{\frac{k^2}{2}}}$, važi:
 \[\binom{n}{k}2^{1-\binom{k}{2}}=\frac{n!}{k!(n-k)!}2^{1-\frac{k(k-1)}{2}}<\frac{n^k}{k!}\frac{2^{1+\frac{k}{2}}}{2^{\frac{k^2}{2}}}\]
 
 Koristeći ovo i teoremu 3.1, pokazaćemo da ako je $n=2^\frac{k}{2}$ i $k\geq 3$, verovatnoća definisana u teoremi 3.1 će biti manja od 1:
 
 \[\binom{2^\frac{k}{2}}{k}2^{1-\frac{k}{2}}<\frac{(2^\frac{k}{2})^k}{k!}\frac{2^{1+\frac{k}{2}}}{2^\frac{k^2}{2}}=\frac{2^\frac{k^2}{2}}{k!}\frac{2^{1+\frac{k}{2}}}{2^\frac{k^2}{2}}=\frac{2^{1+\frac{k}{2}}}{k!}<1\]
 
-Iz ovoga dobijamo da postoji neko bojenje grafa $K_n$ takvo da ne sadrži monohromatski $K_{2^\frac{k}{2}}$ podgraf, što znači da $2^\frac{k}{2}<R(k,k)$.\\
+Iz ovoga dobijamo da postoji neko bojenje grafa $K_n$ takvo da ne sadrži monohromatski podgraf indukovan od strane $k$ čvorova, što znači da $2^\frac{k}{2}<R(k,k)$.\\
 
 {\noindent\fontsize{12pt}{12pt}\textbf{Teorema 3.3}} Postoji $c>0$, takvo da za sve $k\in \mathbb{N}\setminus\{0\}$ važi:
 \[R(k,k)\geq c\cdot k\cdot\sqrt{2^k}\]
@@ -532,10 +536,12 @@ Ovu teoremu nećemo dokazivati jer kompleksnost njenog dokaza prevazilazi namenu
 
 \subsubsection{Gornje granice Remzijevih brojeva}
 
-{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 3.4}}\\
+{\noindent\fontsize{12pt}{12pt}\textbf{Teorema 3.4}}
+\vspace{0.5em} \\
 Važi $R(k,k)<4^k$.
 \vspace{1em}\\
-{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 3.4}}\\
+{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 3.4}}
+\vspace{0.5em} \\
 Iz teoreme 2.2 znamo da važi $R(k,k)\leq \binom{2k-2}{k-1}$. Pokazaćemo da važi $\binom{2k-2}{k-1}<4^k$:\\
 \begin{flalign}
 \binom{2k-2}{k-1}&=\frac{(2k-2)!}{((2k-2)-(k-1))!(k-1)!}\nonumber &&\\
@@ -551,6 +557,7 @@ Trenutnu najbolju gornju granicu za Ramsey-eve brojeve oblika R(k,k) je dokazao 
 \[R(k+1,k+1)\leq k^{-C\frac{\log{k}}{\log{\log{k}}}}\binom{2k}{k}\]
 gde je C neka konstanta.
 \subsection{Poznate granice}
-Do sada poznate netrivijalne granice se mogu videti u sledećoj tabeli:\\
+Do sada poznate netrivijalne granice se mogu videti u sledećoj tabeli:
+\vspace{0.5em} \\
 \includegraphics[width=\textwidth]{poznateGranice.png} %Uzeto sa https://www.combinatorics.org/ojs/index.php/eljc/article/view/DS1
 \end{document}
