@@ -431,7 +431,7 @@
 	\]
 	
 	{\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 2.3}}
-	Iz teoreme 1.obrad već znamo da važi
+	Iz teoreme 1.6 već znamo da važi
 	\[R(m,n)\leq R(m-1,n)+R(m,n-1),\]
 	a sada još treba dokazati da je
 	\[R(m,n)\leq R(m-1,n)+R(m,n-1)-1\] 
@@ -510,7 +510,7 @@ Neka su dati prirodni brojevi $n$ i $k$, takvi da $n\geq k>0$. Ako je
 onda važi $R(k,k)>n$.\\
 
 {\noindent\fontsize{12pt}{12pt}\textbf{Dokaz 3.1}} \\
-Prvo, definišimo graf $K_n$ gde je svaka grana obojena nasumično plavo ili crveno (50\% šanse za plavo i 50\% šanse za crveno). Ako nasumično odaberemo k čvorova iz $K_n$, verovatnoća da ovi čvorovi formiraju indukovani podgraf $K_k$ gde je svaka grana iste boje je $2^{1-\binom{k}{2}}$.\\
+Prvo, definišimo graf $K_n$ gde je svaka grana obojena nasumično plavo ili crveno (50\% šanse za plavo i 50\% šanse za crveno). Ako nasumično odaberemo k čvorova iz $K_n$, verovatnoća da je podgraf indukovan od strane tih $k$ čvorova monohromatski je $2^{1-\binom{k}{2}}$.\\
 Nakon toga, primetimo da je broj $K_k$ podgrafa u $K_n$ jednak $\binom{n}{k}$, kako je to ekvivalentno biranju $k$ od $n$ čvorova iz $K_n$. Iz ovoga se može zaključiti da je verovatnoća da postoji $K_k$ podgraf u kome su sve grane obojene istom bojom $\binom{n}{k}2^{1-\binom{k}{2}}$. Ako je ova verovatnoća manja od 1, onda postoji neki graf $K_n$ koji ne sadrži monohromatski $K_k$ podgraf. Iz toga dobijamo $R(k,k)>n$. \\ \\
 
 {\noindent\fontsize{12pt}{12pt}\textbf{Teorema 3.2}} \\
