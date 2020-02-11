@@ -30,26 +30,27 @@ int main()
     int redova,duzina=14;
     printf("Unesi broj redova:\n");
     scanf("%i",&redova);
-    int maxDuzina=redova*duzina+4*(redova-1);
+    int maxDuzina=redova*duzina
     for(int i=0;i<redova;i++){
         int a=2,b=a+i;
         //printf("\\[");
-        print((maxDuzina-(i+1)*duzina-4*i)/2);
+        int space=redova-1-i;
+
         for(int j=0;j<=i;j++){
             printf("R(%2i,%2i)",a,b);
             if(znamo[a][b])
-                printf(" =");
+                printf("  =");
             else
-                printf("<=");
+                printf(" <=");
                 //printf("\\leq ");
-            printf("%4lld",granica[a][b]);
+            printf("%3lld",granica[a][b]);
             print(4);
             a++;
             b--;
             //if(j!=i)
             //printf("\\hspace{0.3cm}");
         }
-        printf("\n\n");
+        printf("\n");
         //printf("\\]\n");
     }
     while(true){
